@@ -1,0 +1,426 @@
+{
+  "model_name": "K-Nearest Neighbors Regressor",
+  "algorithm": "KNeighborsRegressor",
+  "best_k": 8,
+  "weights": "distance",
+  "metric": "euclidean",
+  "feature_columns": [
+    "Square_Feet",
+    "Num_Bedrooms",
+    "Num_Bathrooms",
+    "Num_Floors",
+    "Year_Built",
+    "Has_Garden",
+    "Has_Pool",
+    "Garage_Size",
+    "Location_Score",
+    "Distance_to_Center"
+  ],
+  "target_column": "Price",
+  "total_samples": 500,
+  "train_samples": 400,
+  "test_samples": 100,
+  "metrics": {
+    "mae": 51973.56,
+    "mse": 4524596239.62,
+    "rmse": 67265.12,
+    "r2_score": 0.6992,
+    "baseline_mae": 101712.08,
+    "baseline_rmse": 126073.76,
+    "variance_explained_pct": 69.92
+  },
+  "feature_correlations": {
+    "Square_Feet": 0.5586,
+    "Num_Bedrooms": 0.564,
+    "Num_Bathrooms": 0.1567,
+    "Num_Floors": 0.1774,
+    "Year_Built": 0.4183,
+    "Has_Garden": 0.1092,
+    "Has_Pool": 0.1366,
+    "Garage_Size": 0.0321,
+    "Location_Score": 0.0713,
+    "Distance_to_Center": 0.0007
+  },
+  "feature_stats": {
+    "Square_Feet": {
+      "min": 51.265395961554674,
+      "max": 298.2411990298251,
+      "mean": 174.64,
+      "median": 178.29,
+      "std": 74.67
+    },
+    "Num_Bedrooms": {
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 2.96,
+      "median": 3.0,
+      "std": 1.44
+    },
+    "Num_Bathrooms": {
+      "min": 1.0,
+      "max": 3.0,
+      "mean": 1.98,
+      "median": 2.0,
+      "std": 0.82
+    },
+    "Num_Floors": {
+      "min": 1.0,
+      "max": 3.0,
+      "mean": 1.96,
+      "median": 2.0,
+      "std": 0.8
+    },
+    "Year_Built": {
+      "min": 1900.0,
+      "max": 2022.0,
+      "mean": 1957.6,
+      "median": 1959.0,
+      "std": 35.49
+    },
+    "Has_Garden": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.54,
+      "median": 1.0,
+      "std": 0.5
+    },
+    "Has_Pool": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.49,
+      "median": 0.0,
+      "std": 0.5
+    },
+    "Garage_Size": {
+      "min": 10.0,
+      "max": 49.0,
+      "mean": 30.17,
+      "median": 30.0,
+      "std": 11.58
+    },
+    "Location_Score": {
+      "min": 0.004427814372078842,
+      "max": 9.995439187190943,
+      "mean": 5.16,
+      "median": 5.21,
+      "std": 2.85
+    },
+    "Distance_to_Center": {
+      "min": 0.06281812096244233,
+      "max": 19.92796587358111,
+      "mean": 10.47,
+      "median": 10.89,
+      "std": 5.59
+    }
+  },
+  "k_vs_error_curve": [
+    {
+      "k": 1,
+      "distance_rmse": 84969.55,
+      "distance_mae": 69563.74,
+      "distance_r2": 0.4881,
+      "uniform_rmse": 84969.55,
+      "uniform_mae": 69563.74,
+      "uniform_r2": 0.4881
+    },
+    {
+      "k": 2,
+      "distance_rmse": 70245.31,
+      "distance_mae": 56333.5,
+      "distance_r2": 0.647,
+      "uniform_rmse": 70627.51,
+      "uniform_mae": 56797.19,
+      "uniform_r2": 0.6433
+    },
+    {
+      "k": 3,
+      "distance_rmse": 63888.17,
+      "distance_mae": 51090.26,
+      "distance_r2": 0.7117,
+      "uniform_rmse": 64714.18,
+      "uniform_mae": 51904.14,
+      "uniform_r2": 0.7046
+    },
+    {
+      "k": 4,
+      "distance_rmse": 63868.05,
+      "distance_mae": 51990.63,
+      "distance_r2": 0.713,
+      "uniform_rmse": 64989.28,
+      "uniform_mae": 53034.45,
+      "uniform_r2": 0.7032
+    },
+    {
+      "k": 5,
+      "distance_rmse": 62896.26,
+      "distance_mae": 50976.22,
+      "distance_r2": 0.7214,
+      "uniform_rmse": 64246.1,
+      "uniform_mae": 52205.24,
+      "uniform_r2": 0.7096
+    },
+    {
+      "k": 6,
+      "distance_rmse": 63051.38,
+      "distance_mae": 51136.03,
+      "distance_r2": 0.72,
+      "uniform_rmse": 64385.99,
+      "uniform_mae": 52201.26,
+      "uniform_r2": 0.7086
+    },
+    {
+      "k": 7,
+      "distance_rmse": 62397.18,
+      "distance_mae": 50812.87,
+      "distance_r2": 0.7269,
+      "uniform_rmse": 63588.65,
+      "uniform_mae": 51865.26,
+      "uniform_r2": 0.717
+    },
+    {
+      "k": 8,
+      "distance_rmse": 62262.36,
+      "distance_mae": 51212.63,
+      "distance_r2": 0.7293,
+      "uniform_rmse": 63418.09,
+      "uniform_mae": 52215.72,
+      "uniform_r2": 0.7198
+    },
+    {
+      "k": 9,
+      "distance_rmse": 62646.89,
+      "distance_mae": 51469.62,
+      "distance_r2": 0.7269,
+      "uniform_rmse": 63835.27,
+      "uniform_mae": 52503.27,
+      "uniform_r2": 0.7171
+    },
+    {
+      "k": 10,
+      "distance_rmse": 62457.41,
+      "distance_mae": 51108.64,
+      "distance_r2": 0.7297,
+      "uniform_rmse": 63555.91,
+      "uniform_mae": 52097.58,
+      "uniform_r2": 0.7206
+    },
+    {
+      "k": 11,
+      "distance_rmse": 62864.67,
+      "distance_mae": 51588.66,
+      "distance_r2": 0.7257,
+      "uniform_rmse": 64027.53,
+      "uniform_mae": 52579.73,
+      "uniform_r2": 0.7159
+    },
+    {
+      "k": 12,
+      "distance_rmse": 63245.68,
+      "distance_mae": 51922.85,
+      "distance_r2": 0.7221,
+      "uniform_rmse": 64476.38,
+      "uniform_mae": 52997.22,
+      "uniform_r2": 0.7116
+    },
+    {
+      "k": 13,
+      "distance_rmse": 62789.3,
+      "distance_mae": 51425.17,
+      "distance_r2": 0.726,
+      "uniform_rmse": 63951.16,
+      "uniform_mae": 52341.7,
+      "uniform_r2": 0.7161
+    },
+    {
+      "k": 14,
+      "distance_rmse": 63050.3,
+      "distance_mae": 51643.01,
+      "distance_r2": 0.7245,
+      "uniform_rmse": 64227.0,
+      "uniform_mae": 52594.93,
+      "uniform_r2": 0.7144
+    },
+    {
+      "k": 15,
+      "distance_rmse": 62800.66,
+      "distance_mae": 51416.17,
+      "distance_r2": 0.727,
+      "uniform_rmse": 63954.34,
+      "uniform_mae": 52396.28,
+      "uniform_r2": 0.7172
+    },
+    {
+      "k": 16,
+      "distance_rmse": 62920.89,
+      "distance_mae": 51524.94,
+      "distance_r2": 0.7257,
+      "uniform_rmse": 64104.29,
+      "uniform_mae": 52469.95,
+      "uniform_r2": 0.7156
+    },
+    {
+      "k": 17,
+      "distance_rmse": 63002.48,
+      "distance_mae": 51187.35,
+      "distance_r2": 0.7248,
+      "uniform_rmse": 64167.81,
+      "uniform_mae": 52158.75,
+      "uniform_r2": 0.7149
+    },
+    {
+      "k": 18,
+      "distance_rmse": 62996.36,
+      "distance_mae": 51208.7,
+      "distance_r2": 0.7255,
+      "uniform_rmse": 64124.53,
+      "uniform_mae": 52104.54,
+      "uniform_r2": 0.7158
+    },
+    {
+      "k": 19,
+      "distance_rmse": 63558.6,
+      "distance_mae": 51872.91,
+      "distance_r2": 0.7202,
+      "uniform_rmse": 64779.15,
+      "uniform_mae": 52922.67,
+      "uniform_r2": 0.7096
+    },
+    {
+      "k": 20,
+      "distance_rmse": 63802.82,
+      "distance_mae": 51836.58,
+      "distance_r2": 0.7184,
+      "uniform_rmse": 65030.22,
+      "uniform_mae": 52815.85,
+      "uniform_r2": 0.7077
+    },
+    {
+      "k": 21,
+      "distance_rmse": 64209.12,
+      "distance_mae": 52215.02,
+      "distance_r2": 0.715,
+      "uniform_rmse": 65483.12,
+      "uniform_mae": 53202.99,
+      "uniform_r2": 0.7039
+    },
+    {
+      "k": 22,
+      "distance_rmse": 64394.48,
+      "distance_mae": 52572.55,
+      "distance_r2": 0.7131,
+      "uniform_rmse": 65671.24,
+      "uniform_mae": 53603.42,
+      "uniform_r2": 0.7019
+    },
+    {
+      "k": 23,
+      "distance_rmse": 64445.65,
+      "distance_mae": 52498.39,
+      "distance_r2": 0.7125,
+      "uniform_rmse": 65724.6,
+      "uniform_mae": 53579.36,
+      "uniform_r2": 0.7012
+    },
+    {
+      "k": 24,
+      "distance_rmse": 65122.19,
+      "distance_mae": 53136.95,
+      "distance_r2": 0.7065,
+      "uniform_rmse": 66450.64,
+      "uniform_mae": 54290.35,
+      "uniform_r2": 0.6946
+    },
+    {
+      "k": 25,
+      "distance_rmse": 65267.65,
+      "distance_mae": 53123.2,
+      "distance_r2": 0.7051,
+      "uniform_rmse": 66596.72,
+      "uniform_mae": 54277.11,
+      "uniform_r2": 0.6931
+    },
+    {
+      "k": 26,
+      "distance_rmse": 65925.67,
+      "distance_mae": 53505.13,
+      "distance_r2": 0.6995,
+      "uniform_rmse": 67322.35,
+      "uniform_mae": 54738.63,
+      "uniform_r2": 0.6868
+    },
+    {
+      "k": 27,
+      "distance_rmse": 66341.57,
+      "distance_mae": 53717.8,
+      "distance_r2": 0.6954,
+      "uniform_rmse": 67774.18,
+      "uniform_mae": 54974.08,
+      "uniform_r2": 0.6824
+    },
+    {
+      "k": 28,
+      "distance_rmse": 66791.77,
+      "distance_mae": 54275.08,
+      "distance_r2": 0.6914,
+      "uniform_rmse": 68277.13,
+      "uniform_mae": 55537.18,
+      "uniform_r2": 0.6778
+    },
+    {
+      "k": 29,
+      "distance_rmse": 66907.43,
+      "distance_mae": 54274.54,
+      "distance_r2": 0.6906,
+      "uniform_rmse": 68369.15,
+      "uniform_mae": 55472.14,
+      "uniform_r2": 0.6771
+    },
+    {
+      "k": 30,
+      "distance_rmse": 67093.64,
+      "distance_mae": 54517.75,
+      "distance_r2": 0.6889,
+      "uniform_rmse": 68554.5,
+      "uniform_mae": 55741.45,
+      "uniform_r2": 0.6755
+    }
+  ],
+  "model_comparisons": [
+    {
+      "name": "K-Nearest Neighbors (K=8, Weighted)",
+      "type": "KNN Regressor (Selected)",
+      "mae": 51973.56,
+      "mse": 4524596239.62,
+      "rmse": 67265.12,
+      "r2_score": 0.6992,
+      "notes": "Best local neighbor capture; directly provides comparable property identification"
+    },
+    {
+      "name": "Linear Regression",
+      "type": "Parametric Linear",
+      "mae": 16851.0,
+      "mse": 437730359.71,
+      "rmse": 20922.01,
+      "r2_score": 0.9709,
+      "notes": "Simple baseline, assumes linear feature relationships"
+    },
+    {
+      "name": "Decision Tree Regressor",
+      "type": "Non-linear Tree (Depth=6)",
+      "mae": 55576.9,
+      "mse": 4851212956.41,
+      "rmse": 69650.65,
+      "r2_score": 0.6775,
+      "notes": "Piecewise constant approximations, prone to high variance"
+    },
+    {
+      "name": "Random Forest Regressor",
+      "type": "Ensemble (100 Trees)",
+      "mae": 42199.39,
+      "mse": 2709327993.27,
+      "rmse": 52051.21,
+      "r2_score": 0.8199,
+      "notes": "Strong ensemble baseline, higher computational complexity"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Smart House Price Analysis and Prediction System",
+  "description": "Web-based house price prediction and property analysis platform using Machine Learning with Scikit-learn and SQLite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
